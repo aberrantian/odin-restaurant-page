@@ -1,1 +1,2 @@
-console.log("hello world");
+const CONTENT = document.getElementById("content");
+console.log(CONTENT);
