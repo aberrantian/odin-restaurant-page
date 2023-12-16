@@ -1,2 +1,14 @@
+const HTML = document.getElementById("html");
+HTML.style.margin = '0px';
+HTML.style.height = '100%';
+HTML.style.width = '100%';
+const BODY = document.getElementById("body");
+BODY.style.margin = '0px';
+BODY.style.height = '100%';
+BODY.style.width = '100%';
 const CONTENT = document.getElementById("content");
-console.log(CONTENT);
+CONTENT.style.margin = '0px';
+CONTENT.style.height = '100%';
+CONTENT.style.width = '100%';
+console.log(HTML);
+// console.log(CONTENT);
