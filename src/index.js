@@ -16,12 +16,14 @@ HOME.classList.add('tab-btn');
 HOME.addEventListener('click', () => {
   setContent(createHome());
 })
+
 const MENU = document.createElement('button');
 MENU.innerText = 'Menu';
 MENU.classList.add('tab-btn');
 MENU.addEventListener('click', () => {
   setContent(createMenu());
 })
+
 const CONTACT = document.createElement('button');
 CONTACT.innerText = 'Contact';
 CONTACT.classList.add('tab-btn');
@@ -30,11 +32,22 @@ CONTACT.addEventListener('click', () => {
 })
 
 
-function setContent(content) {
+function setContent(content_array) {
+  if (Array.isArray(content_array) === false) {
+    console.warn('setContent did not recieve array of nodes');
+    return;
+  }
+
   CONTENT.innerHTML = '';
-  CONTENT.appendChild(content);
+
+  for (let index = 0; index < content_array.length; index++) {
+    CONTENT.appendChild(content_array[index]);
+  }
 }
 
 
 TAB_BAR.append(HOME, MENU, CONTACT);
 document.body.append(TAB_BAR, CONTENT);
+
+const DEFAULT_TAB = createHome();
+setContent(DEFAULT_TAB);
