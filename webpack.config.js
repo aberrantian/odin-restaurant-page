@@ -3,9 +3,9 @@ const path = require('path');
 module.exports = {
   entry: {
     index: './src/index.js',
-    home: './src/home-tab.js',
-    menu: './src/menu-tab.js',
-    contact: './src/contact-tab.js',
+//    home: './src/home-tab.js',
+//    menu: './src/menu-tab.js',
+//    contact: './src/contact-tab.js',
   },
   output: {
     filename: '[name].bundle.js',
