@@ -49,5 +49,5 @@ function setContent(content_array) {
 TAB_BAR.append(HOME, MENU, CONTACT);
 document.body.append(TAB_BAR, CONTENT);
 
-const DEFAULT_TAB = createMenu();
+const DEFAULT_TAB = createContact();
 setContent(DEFAULT_TAB);
