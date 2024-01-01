@@ -12,21 +12,21 @@ CONTENT.id = 'content';
 
 const HOME = document.createElement('button');
 HOME.innerText = 'Home';
-HOME.classList.add('tab-btn');
+HOME.classList.add('tab-bar-btn');
 HOME.addEventListener('click', () => {
   setContent(createHome());
 })
 
 const MENU = document.createElement('button');
 MENU.innerText = 'Menu';
-MENU.classList.add('tab-btn');
+MENU.classList.add('tab-bar-btn');
 MENU.addEventListener('click', () => {
   setContent(createMenu());
 })
 
 const CONTACT = document.createElement('button');
 CONTACT.innerText = 'Contact';
-CONTACT.classList.add('tab-btn');
+CONTACT.classList.add('tab-bar-btn');
 CONTACT.addEventListener('click', () => {
   setContent(createContact());
 })

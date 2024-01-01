@@ -3,6 +3,7 @@ import LOGO_SRC from './assets/logo.png';
 export function createHome() {
   const LOGO = new Image();
   LOGO.src = LOGO_SRC;
+  LOGO.id = "home-logo";
 
   const HEADLINE = document.createElement('h1');
   HEADLINE.innerText = "SUSTENANCE from BIG CORP!"

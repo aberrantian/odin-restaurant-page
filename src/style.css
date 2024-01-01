@@ -4,10 +4,18 @@ html, body {
 	width: 100%;
 }
 
+:root {
+	--black: #1B1B1B;
+	--gold: #CDB587;
+	--text: #DDDDDD;
+	--click: #7C7C7C;
+	--hover: #4C4C4C;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
-	background-color: #1B1B1B;
+	background-color: var(--black);
 }
 
 #tab-bar {
@@ -19,14 +27,51 @@ body {
 	justify-content: center;
 	gap: 8px;
 
-	background-color: grey;
+	background-color: var(--gold);
 }
 
-.tab-btn {
+.tab-bar-btn {
 	margin-top: 16px;
+	background-color: var(--black);
+	border: none;
+	outline: none;
+	color: var(--text);
+	padding: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	font-weight: bold;
+}
+
+.tab-bar-btn:hover {
+	background-color: var(--hover);
+	color: #fff;
+}
+
+.tab-bar-btn:active {
+	background-color: var(--click);
+	color: #fff;
 }
 
 #content {
 	flex: 1 1 auto;
-	background-color: white;
+	background-color: var(--black);
+	color: var(--text);
+
+	padding: 32px;
+
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+#content > p, h1 {
+	text-align: center;
+}
+
+#home-logo {
+	max-height: 500px;
+	max-width: 500px;
+	height: auto;
+	width: auto;
+	border: 2px solid var(--gold);
 }
